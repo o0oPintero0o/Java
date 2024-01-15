@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<!-- Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<!-- Add jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- Add Slick Carousel CSS -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script type="text/javascript" src="js/web.js"></script>
+	<!-- Add AOS Animation -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+	<script type="text/javascript" src="js/book.js"></script>
+	<link rel="icon" href="images/logo.webp" type="image/png">
+	<title>BOOK</title>
+</head>
+
+<body>
+	<div id="wrapwrap" class="homepage">
+		<header class="header">
+			<div class="header-top">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-8">
+							<ul class="contact-info">
+								<li class="contact-info__list">
+									<img src="images/top-icon1.png">100% sản phẩm có bản quyền
+								</li>
+								<li class="contact-info__list">
+									<img src="images/top-icon2.png">Giao hàng toàn quốc
+								</li>
+								<li class="contact-info__list">
+									<img src="images/top-icon3.png">30 ngày miễn phí đổi trả
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-4">
+							<ul class="contact-info contact-info-right">
+								<li class="contact-info__list">
+									<a href=""><p class="contact-info__list">Tin tức</p></a>
+								</li>
+								<li class="contact-info__list">
+									<a href=""><p class="contact-info__list">Hướng dẫn</p></a>
+								</li>
+							</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-middle">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2">
+							<a href="index.html" class="logo-box"><img src="images/logo.png"></a>
+						</div>
+						<div class="col-lg-5">
+							<form method="" action="">
+								<div class="input-group">
+									<input type="text" name="search" class="form-control search_box_fix" placeholder="Tìm kiếm sản phẩm bạn mong muốn">
+									<div class="input-group-append">
+										<button type="submit" class="search-form__submit" title="search" style="width: 48px;">
+											<div class="search"><i class="search-btn-icon fa-solid fa-magnifying-glass" onclick="return search();"></i></div>
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col-lg-3">
+							<div class="corporate">
+								<div class="corporate-single corporate-1">
+									<div class="corporate-icon">
+										<a href="#"><img src="images/top-icon5.png"></a>
+									</div>
+									<div class="corporate-content">
+										<a href="#"><p class="corporate-text hover-follow-color">Theo dõi<br>đơn hàng</p></a>
+									</div>
+								</div>
+								<div class="corporate-single">
+									<div class="corporate-icon">
+										<a href="#"><img src="images/top-icon7.png"></a>
+									</div>
+									<div class="corporate-content">
+										<div class="dropdown header-top-dropdown">
+											<div class="drop-down-toggle dropdown-login-header">Đăng nhập<br>Đăng ký</div>
+											<div class="row">
+												<div class="popup-drop-down-login">
+													<div class="content-popup-login">
+														<a href="login.htmln" style="margin-top: 5px;"><button class="btn-dropdown-login">Đăng nhập</button></a>
+														<a href="register.html"><button class="btn-dropdown-login">Đăng ký</button></a>
+														<a href=""><button class="btn-dropdown-login btn-login-facebook"><span><i class="fa-brands fa-facebook" style="font-size: 20px;"></i></span>Đăng nhập bằng Facebook</button></a>
+														<a href=""><button class="btn-dropdown-login btn-login-google"><span><i class="fa-brands fa-google" style="font-size: 20px;"></i></i></span>Đăng nhập bằng Google</button></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="mini-cart">
+								<div class="mini-cart_dropdown">
+									<img src="images/top-icon8.png">
+									<span class="cart-icon">Giỏ hàng</span>
+									<sub class="mini-cart_count">0</sub>
+								</div>
+								<div class="mini-cart__dropdown-menu">
+									<div class="mini-cart__content form-mini-cart-header">
+										<div class="mini-cart_item">
+											<div class="mini-cart_item-single">
+												<div class="row">
+													<div class="col-md-3 col-lg-3">
+														<div class="image-cart"><a href=""><img src="images/cart.jfif" class="img-responsive"></a></div>
+													</div>
+													<div class="col-md-7 col-lg-7">
+														<a href="#" class="item-name">Chín tháng yêu thương</a>
+														<div class="cart-quantity">Số lượng: 1</div>
+													</div>
+													<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+														<p class="price-cart">69.000đ</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="mini-cart_total">
+											<h4>
+												<span class="mini-cart_total-title">Thành tiền</span>
+												<span class="cart-total-value"><strong>69.000đ</strong></span>
+											</h4>
+										</div>
+										<div class="mini-cart_btn">
+											<a class="cart-view">
+												Xem giỏ hàng
+												<i class="fa-solid fa-angle-right"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom" style="height: 50px;">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2 col-md-2" style="padding-right: 0!important;">
+							<div class="category-nav" style="height: 50px;">
+								<div class="category-nav_title">
+									<img src="images/top-icon9.png">
+									<span class="product-title">Danh mục sản phẩm</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-10 col-md-10">
+							<div class="custom-element">
+								<div class="history-view">
+									<i class="fa-history-view fa-solid fa-clock-rotate-left"></i>
+									<a href="./productdetail.html" class="history-view_product">
+										Sản phẩm đã xem <i class="fa-solid fa-angle-down"></i>
+									</a>
+								</div>
+								<div class="hotdeal">
+									<i class="fa-hotdeal fa-solid fa-fire"></i>
+									<a href="" class="hotdeal_product">Hotdeal</a>
+								</div>
+								<div class="flash-sale">
+									<i class="fa-flash-sale fa-solid fa-bolt"></i>
+									<a href="" class="flash-sale_product">Flash Sale</a>
+								</div>
+								<div class="location">
+									<i class="fa-location fa-solid fa-location-dot"></i>
+									<a href="" class="location_shop">Hệ thống cửa hàng</a>
+								</div>
+								<div class="contact">
+									<i class="fa-contact fa-solid fa-phone"></i>
+									<a href="" class="contact_phone">0931068789</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="main-content-wrapper">
+			<div class="hero-area">
+				<div class="container hero-area-1">
+					<div class="row">
+						<div class="col-category_menu-slide">
+							<ul class="category-nav__menu_slide">
+								<li class="category-nav__menu__item has-children">
+									<a href="products.html">ADCBookiz</a>
+								</li>
+								<li class="category-nav__menu__item has-children">
+									<a href="products.html">Sách Mầm Non ADC</a>
+								</li>
+								<li class="category-nav__menu__item has-children">
+									<a href="products.html">Truyện - Sách Thiếu Nhi</a>
+								</li>
+								<li class="category-nav__menu__item has-children">
+									<a href="products.html">Sách Tiếng Việt</a>
+								</li>
+								<li class="category-nav__menu__item has-children">
+									<a href="products.html">Sách Giáo Khoa - Tham Khảo</a>
+								</li>
+								<li class="category-nav__menu__item has-children">
+									<a href="products.html">Sách Ngoại Ngữ</a>
+								</li>
+								<li class="category-nav__menu__item has-children">
+									<a href="products.html">VPP - Dụng Cụ Học Sinh</a>
+								</li>
+								<li class="category-nav__menu__item has-children">
+									<a href="">Quà Tặng - Đồ Chơi</a>
+								</li>
+								<li class="category-nav__menu__item has-children">
+									<a href="">Thẻ Học Trực Tuyến</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-9 box-slide">
+							<img src="images/image_1.jfif" id="slide-img">
+						    <div id="prev" onclick="prev();"><i class="fa-solid fa-angle-left"></i></div>
+						    <div id="next" onclick="next();"><i class="fa-solid fa-angle-right"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-products-area">
+				<div class="container">
+					<div class="new-products-card">
+						<div class="img-products-card"><a href=""><img src="images/products_area/area_1.jfif"></a></div>
+						<div class="img-products-card"><a href=""><img src="images/products_area/area_2.png"></a></div>
+						<div class="img-products-card"><a href=""><img src="images/products_area/area_3.png"></a></div>
+						<div class="img-products-card"><a href=""><img src="images/products_area/area_4.png"></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="category-products-area section-padding bg-white">
+				<div class="container">
+					<div class="row align-items-center mb--20">
+						<div class="col-md-4"></div>
+						<div class="col-md-4 text-center">
+							<h3 class="top-sale">TOP SẢN PHẨM BÁN CHẠY NHẤT 2023</h3>
+						</div>
+					</div>
+					<div class="list-book slide-book">
+						<div class="book-content">
+							<div class="card-book">
+								<div class="img-card-book"><img src="images/book7.webp"></div>
+								<div class="info-card-book">
+									<a href="">Việc Nhỏ Cùng Làm - Để Chúng Mình Không Hiểu Lầm</a>
+									<div class="vote-book">
+										<div class="vote-star">
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+										</div>
+										<div class="vote-number"><p>( <span>1005</span> Đánh giá )</p></div>
+									</div>
+									<div class="time-book"><i class="fa-solid fa-house"></i> <span>ADCBookiz</span></div>
+									<div class="btn-card-book">
+										<div class="price-book">
+											<span class="price-old">35,000đ</span>
+											<span class="price-new">31,500đ</span>
+										</div>
+										<button class="btn-view">
+											<a href="">
+												<span>Mua ngay</span>
+												<i class="fa-solid fa-cart-shopping"></i>
+											</a>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="book-content">
+							<div class="card-book">
+								<div class="img-card-book"><img src="images/book8.webp"></div>
+								<div class="info-card-book">
+									<a href="">Việc Nhỏ Cùng Làm - Để Chúng Mình Không Hiểu Lầm</a>
+									<div class="vote-book">
+										<div class="vote-star">
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+										</div>
+										<div class="vote-number"><p>( <span>1005</span> Đánh giá )</p></div>
+									</div>
+									<div class="time-book"><i class="fa-solid fa-house"></i> <span>ADCBookiz</span></div>
+									<div class="btn-card-book">
+										<div class="price-book">
+											<span class="price-old">35,000đ</span>
+											<span class="price-new">31,500đ</span>
+										</div>
+										<button class="btn-view">
+											<a href="">
+												<span>Mua ngay</span>
+												<i class="fa-solid fa-cart-shopping"></i>
+											</a>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="book-content">
+							<div class="card-book">
+								<div class="img-card-book"><img src="images/book3.webp"></div>
+								<div class="info-card-book">
+									<a href="">Việc Nhỏ Cùng Làm - Để Chúng Mình Không Hiểu Lầm</a>
+									<div class="vote-book">
+										<div class="vote-star">
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+										</div>
+										<div class="vote-number"><p>( <span>1005</span> Đánh giá )</p></div>
+									</div>
+									<div class="time-book"><i class="fa-solid fa-house"></i> <span>ADCBookiz</span></div>
+									<div class="btn-card-book">
+										<div class="price-book">
+											<span class="price-old">35,000đ</span>
+											<span class="price-new">31,500đ</span>
+										</div>
+										<button class="btn-view">
+											<a href="">
+												<span>Mua ngay</span>
+												<i class="fa-solid fa-cart-shopping"></i>
+											</a>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="book-content">
+							<div class="card-book">
+								<div class="img-card-book"><img src="images/book4.webp"></div>
+								<div class="info-card-book">
+									<a href="">Việc Nhỏ Cùng Làm - Để Chúng Mình Không Hiểu Lầm</a>
+									<div class="vote-book">
+										<div class="vote-star">
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+										</div>
+										<div class="vote-number"><p>( <span>1005</span> Đánh giá )</p></div>
+									</div>
+									<div class="time-book"><i class="fa-solid fa-house"></i> <span>ADCBookiz</span></div>
+									<div class="btn-card-book">
+										<div class="price-book">
+											<span class="price-old">35,000đ</span>
+											<span class="price-new">31,500đ</span>
+										</div>
+										<button class="btn-view">
+											<a href="">
+												<span>Mua ngay</span>
+												<i class="fa-solid fa-cart-shopping"></i>
+											</a>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="book-content">
+							<div class="card-book">
+								<div class="img-card-book"><img src="images/book5.webp"></div>
+								<div class="info-card-book">
+									<a href="">Việc Nhỏ Cùng Làm - Để Chúng Mình Không Hiểu Lầm</a>
+									<div class="vote-book">
+										<div class="vote-star">
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+										</div>
+										<div class="vote-number"><p>( <span>1005</span> Đánh giá )</p></div>
+									</div>
+									<div class="time-book"><i class="fa-solid fa-house"></i> <span>ADCBookiz</span></div>
+									<div class="btn-card-book">
+										<div class="price-book">
+											<span class="price-old">35,000đ</span>
+											<span class="price-new">31,500đ</span>
+										</div>
+										<button class="btn-view">
+											<a href="">
+												<span>Mua ngay</span>
+												<i class="fa-solid fa-cart-shopping"></i>
+											</a>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="book-content">
+							<div class="card-book">
+								<div class="img-card-book"><img src="images/book6.webp"></div>
+								<div class="info-card-book">
+									<a href="">Việc Nhỏ Cùng Làm - Để Chúng Mình Không Hiểu Lầm</a>
+									<div class="vote-book">
+										<div class="vote-star">
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+										</div>
+										<div class="vote-number"><p>( <span>1005</span> Đánh giá )</p></div>
+									</div>
+									<div class="time-book"><i class="fa-solid fa-house"></i> <span>ADCBookiz</span></div>
+									<div class="btn-card-book">
+										<div class="price-book">
+											<span class="price-old">35,000đ</span>
+											<span class="price-new">31,500đ</span>
+										</div>
+										<button class="btn-view">
+											<a href="">
+												<span>Mua ngay</span>
+												<i class="fa-solid fa-cart-shopping"></i>
+											</a>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box-outstanding-product">
+				<div class="container">
+					<div class="wrap-outstanding-product">
+						<div class="title-outstanding-product">
+							<h3>Sản phẩm nổi bật</h3>
+							<a href="">Xem tất cả <i class="fa-solid fa-angle-right"></i></a>
+						</div>
+						<div class="content-outstanding-product">
+							<div class="card-outstanding-product">
+								<div class="img-card"><img src="images/outstanding/o1.webp"></div>
+								<div class="info-card">
+									<h3><a href="">Đồ Chơi Combo Xe Buýt Tham Quan Và Xe Taxi Có Đèn Và Âm Thanh CB-VTA15-VT21Q</a></h3>
+									<span class="smart-discount"> <i> - 10% </i></span>
+									<div class="price-book">
+										<span class="price-new">35,000đ</span>
+										<span class="price-old">31,500đ</span>
+									</div>
+									<a class="outstanding-btn" href="">Xem chi tiết <i class="fa-solid fa-arrow-right"></i></a>
+								</div>
+							</div>
+							<div class="card-outstanding-product">
+								<div class="img-card"><img src="images/outstanding/o2.webp"></div>
+								<div class="info-card">
+									<h3><a href="">Đồ Chơi Combo Xe Buýt Tham Quan Và Xe Taxi Có Đèn Và Âm Thanh CB-VTA15-VT21Q</a></h3>
+									<span class="smart-discount"> <i> - 10% </i></span>
+									<div class="price-book">
+										<span class="price-new">35,000đ</span>
+										<span class="price-old">31,500đ</span>
+									</div>
+									<a class="outstanding-btn" href="">Xem chi tiết <i class="fa-solid fa-arrow-right"></i></a>
+								</div>
+							</div>					
+							<div class="card-outstanding-product">
+								<div class="img-card"><img src="images/outstanding/o3.webp"></div>
+								<div class="info-card">
+									<h3><a href="">Đồ Chơi Combo Xe Buýt Tham Quan Và Xe Taxi Có Đèn Và Âm Thanh CB-VTA15-VT21Q</a></h3>
+									<span class="smart-discount"> <i> - 10% </i></span>
+									<div class="price-book">
+										<span class="price-new">35,000đ</span>
+										<span class="price-old">31,500đ</span>
+									</div>
+									<a class="outstanding-btn" href="">Xem chi tiết <i class="fa-solid fa-arrow-right"></i></a>
+								</div>
+							</div>				
+							<div class="card-outstanding-product">
+								<div class="img-card"><img src="images/outstanding/o4.webp"></div>
+								<div class="info-card">
+									<h3><a href="">Đồ Chơi Combo Xe Buýt Tham Quan Và Xe Taxi Có Đèn Và Âm Thanh CB-VTA15-VT21Q</a></h3>
+									<span class="smart-discount"> <i> - 10% </i></span>
+									<div class="price-book">
+										<span class="price-new">35,000đ</span>
+										<span class="price-old">31,500đ</span>
+									</div>
+									<a class="outstanding-btn" href="">Xem chi tiết <i class="fa-solid fa-arrow-right"></i></a>
+								</div>
+							</div>	
+							<div class="card-outstanding-product">
+								<div class="img-card"><img src="images/outstanding/o5.webp"></div>
+								<div class="info-card">
+									<h3><a href="">Đồ Chơi Combo Xe Buýt Tham Quan Và Xe Taxi Có Đèn Và Âm Thanh CB-VTA15-VT21Q</a></h3>
+									<span class="smart-discount"> <i> - 10% </i></span>
+									<div class="price-book">
+										<span class="price-new">35,000đ</span>
+										<span class="price-old">31,500đ</span>
+									</div>
+									<a class="outstanding-btn" href="">Xem chi tiết <i class="fa-solid fa-arrow-right"></i></a>
+								</div>
+							</div>
+							<div class="card-outstanding-product">
+								<div class="img-card"><img src="images/outstanding/o6.webp"></div>
+								<div class="info-card">
+									<h3><a href="">Đồ Chơi Combo Xe Buýt Tham Quan Và Xe Taxi Có Đèn Và Âm Thanh CB-VTA15-VT21Q</a></h3>
+									<span class="smart-discount"> <i> - 10% </i></span>
+									<div class="price-book">
+										<span class="price-new">35,000đ</span>
+										<span class="price-old">31,500đ</span>
+									</div>
+									<a class="outstanding-btn" href="">Xem chi tiết <i class="fa-solid fa-arrow-right"></i></a>
+								</div>
+							</div>	
+							<div class="card-outstanding-product">
+								<div class="img-card"><img src="images/outstanding/o7.webp"></div>
+								<div class="info-card">
+									<h3><a href="">Đồ Chơi Combo Xe Buýt Tham Quan Và Xe Taxi Có Đèn Và Âm Thanh CB-VTA15-VT21Q</a></h3>
+									<span class="smart-discount"> <i> - 10% </i></span>
+									<div class="price-book">
+										<span class="price-new">35,000đ</span>
+										<span class="price-old">31,500đ</span>
+									</div>
+									<a class="outstanding-btn" href="">Xem chi tiết <i class="fa-solid fa-arrow-right"></i></a>
+								</div>
+							</div>	
+							<div class="card-outstanding-product">
+								<div class="img-card"><img src="images/outstanding/o8.webp"></div>
+								<div class="info-card">
+									<h3><a href="">Đồ Chơi Combo Xe Buýt Tham Quan Và Xe Taxi Có Đèn Và Âm Thanh CB-VTA15-VT21Q</a></h3>
+									<span class="smart-discount"> <i> - 10% </i></span>
+									<div class="price-book">
+										<span class="price-new">35,000đ</span>
+										<span class="price-old">31,500đ</span>
+									</div>
+									<a class="outstanding-btn" href="">Xem chi tiết <i class="fa-solid fa-arrow-right"></i></a>
+								</div>
+							</div>	
+							<div class="card-outstanding-product">
+								<div class="img-card"><img src="images/outstanding/o9.webp"></div>
+								<div class="info-card">
+									<h3><a href="">Đồ Chơi Combo Xe Buýt Tham Quan Và Xe Taxi Có Đèn Và Âm Thanh CB-VTA15-VT21Q</a></h3>
+									<span class="smart-discount"> <i> - 10% </i></span>
+									<div class="price-book">
+										<span class="price-new">35,000đ</span>
+										<span class="price-old">31,500đ</span>
+									</div>
+									<a class="outstanding-btn" href="">Xem chi tiết <i class="fa-solid fa-arrow-right"></i></a>
+								</div>
+							</div>	
+							<div class="card-outstanding-product">
+								<div class="img-card"><img src="images/outstanding/o10.webp"></div>
+								<div class="info-card">
+									<h3><a href="">Đồ Chơi Combo Xe Buýt Tham Quan Và Xe Taxi Có Đèn Và Âm Thanh CB-VTA15-VT21Q</a></h3>
+									<span class="smart-discount"> <i> - 10% </i></span>
+									<div class="price-book">
+										<span class="price-new">35,000đ</span>
+										<span class="price-old">31,500đ</span>
+									</div>
+									<a class="outstanding-btn" href="">Xem chi tiết <i class="fa-solid fa-arrow-right"></i></a>
+								</div>
+							</div>	
+						</div>
+						<div class="banner-outstanding-product">
+							<div class="banner-op"><img src="images/outstanding/banner1.webp"></div>
+							<div class="banner-op"><img src="images/outstanding/banner2.webp"></div>
+						</div>
+					</div>
+				</div>		
+			</div>
+			<div class="box-book-home">
+				<div class="container">
+					<div class="wrap-book-home">
+						<div class="title-book-home">
+							<h3>Sách</h3>
+							<ul class="nav-book-home">
+								<li><a href="">ADCBookiz</a></li>
+								<li><a href="">SGK - STK</a></li>
+								<li><a href="">Tâm Lý - Kỹ Năng Sống</a></li>
+								<li><a href="">Văn Học</a></li>
+							</ul>
+							<a class="btn-book-home" href="">Xem tất cả <i class="fa-solid fa-angle-right"></i></a>
+						</div>
+						<div class="slide-product-home">
+							<div class="content-product-home">
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/book/book1.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Những Người Vợ Tốt</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/book/book2.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Những Người Phụ Nữ Bé Nhỏ </a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/book/book3.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Nanh Trắng</a></h3>
+										<span class="soldout"> Hết hàng </span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/book/book4.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Khu Vườn Bí Mật</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/book/book5.webp"></div>
+									<div class="info-card">
+										<h3><a href="./productdetail.html">Hai Vạn Dặm Dưới Biển</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/book/book6.webp"></div>
+									<div class="info-card">
+										<h3><a href="">150 Thuật Ngữ Văn Học</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/book/book7.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Tiêu Sơn Tráng Sĩ</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/book/book8.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Nanh Trắng</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box-toys-home">
+				<div class="container">
+					<div class="wrap-toys-home">
+						<div class="title-toys-home">
+							<h3>Đồ chơi</h3>
+							<ul class="nav-toys-home">
+								<li><a href="">Đồ chơi gỗ</a></li>
+								<li><a href="">Đồ chơi điều khiển</a></li>
+								<li><a href="">Board game</a></li>
+							</ul>
+							<a class="btn-toys-home" href="">Xem tất cả <i class="fa-solid fa-angle-right"></i></a>
+						</div>
+						<div class="slide-product-home">
+							<div class="content-product-home">
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/toys/toy1.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Đồ Chơi YOYO SAO BĂNG EU677244R</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/toys/toy2.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Đồ Chơi YOYO SAO BĂNG EU677244R</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/toys/toy3.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Đồ Chơi YOYO SAO BĂNG EU677244R</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/toys/toy4.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Đồ Chơi YOYO SAO BĂNG EU677244R</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/toys/toy5.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Đồ Chơi YOYO SAO BĂNG EU677244R</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/toys/toy6.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Đồ Chơi YOYO SAO BĂNG EU677244R</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/toys/toy7.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Đồ Chơi YOYO SAO BĂNG EU677244R</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/toys/toy8.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Đồ Chơi YOYO SAO BĂNG EU677244R</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box-students-home">
+				<div class="container">
+					<div class="wrap-students-home">
+						<div class="title-students-home">
+							<h3>VPP - Dụng cụ học sinh</h3>
+							<a class="btn-students-home" href="">Xem tất cả <i class="fa-solid fa-angle-right"></i></a>
+						</div>
+						<div class="slide-product-home">
+							<div class="content-product-home">
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/students/s1.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Ví Bút Deli Eh911</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/students/s2.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Ví Bút Deli Eh911</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/students/s3.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Ví Bút Deli Eh911</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/students/s4.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Ví Bút Deli Eh911</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/students/s5.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Ví Bút Deli Eh911</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/students/s6.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Ví Bút Deli Eh911</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/students/s7.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Ví Bút Deli Eh911</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/students/s3.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Ví Bút Deli Eh911</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box-gifts-home">
+				<div class="container">
+					<div class="wrap-gifts-home">
+						<div class="title-gifts-home">
+							<h3>Quà tặng - Lưu niệm</h3>
+							<a class="btn-gifts-home" href="">Xem tất cả <i class="fa-solid fa-angle-right"></i></a>
+						</div>
+						<div class="slide-product-home">
+							<div class="content-product-home">
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/gifts/g1.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Bình Nước Ergo Sport Frozen Ii 400ML 35028</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/gifts/g2.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Bình Nước Ergo Sport Frozen Ii 400ML 35028</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/gifts/g3.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Bình Nước Ergo Sport Frozen Ii 400ML 35028</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/gifts/g4.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Bình Nước Ergo Sport Frozen Ii 400ML 35028</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/gifts/g5.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Bình Nước Ergo Sport Frozen Ii 400ML 35028</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/gifts/g6.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Bình Nước Ergo Sport Frozen Ii 400ML 35028</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/gifts/g7.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Bình Nước Ergo Sport Frozen Ii 400ML 35028</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/gifts/g8.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Bình Nước Ergo Sport Frozen Ii 400ML 35028</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box-outstanding-brand">
+				<div class="container">
+					<div class="wrap-outstanding-brand">
+						<div class="title-outstanding-brand">
+							<h3>Thương hiệu nổi bật</h3>
+							<a class="btn-outstanding-brand" href="">Xem tất cả <i class="fa-solid fa-angle-right"></i></a>
+						</div>
+						<div class="content-outstanding-brand">
+							<div class="content-left">
+								<a href=""><img src="images/outstanding-brand/brand-banner1.webp"></a>
+							</div>
+							<div class="content-right">
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/outstanding-brand/op1.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Ba Lô Học Sinh Sakos Kid Jolly (Special Hero)</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/outstanding-brand/op2.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Ba Lô Học Sinh Sakos Kid Jolly (Special Hero)</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/outstanding-brand/op3.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Ba Lô Học Sinh Sakos Kid Jolly (Special Hero)</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/outstanding-brand/op4.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Ba Lô Học Sinh Sakos Kid Jolly (Special Hero)</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/outstanding-brand/op5.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Ba Lô Học Sinh Sakos Kid Jolly (Special Hero)</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/outstanding-brand/op6.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Ba Lô Học Sinh Sakos Kid Jolly (Special Hero)</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box-news-home">
+				<div class="container">
+					<div class="wrap-news-home">
+						<div class="title-news-home">
+							<h3>Tin tức</h3>
+							<a class="btn-news-home" href="">Xem tất cả <i class="fa-solid fa-angle-right"></i></a>
+						</div>
+						<div class="list-news slide-news">
+							<div class="card-news">
+								<div class="img-card-news"><img src="images/news/n1.webp"></div>
+								<div class="info-card-news">
+									<a href="">HỨNG KHỞI TỚI TRƯỜNG - QUÀ "KOOL" CỰC ĐÃ</a>
+									<p>Mùa Back To School 2023 đã đến rồi, vô vàn sản phẩm phục vụ năm học mới, đáp ứng nhu cầu của nhiều lứa tuổi đã sẵn sàng tại ADCBook cùng những ưu đãi và quà tặng hấp dẫn!</p>
+								</div>
+							</div>
+							<div class="card-news">
+								<div class="img-card-news"><img src="images/news/n2.webp"></div>
+								<div class="info-card-news">
+									<a href="">HỨNG KHỞI TỚI TRƯỜNG - QUÀ "KOOL" CỰC ĐÃ</a>
+									<p>Mùa Back To School 2023 đã đến rồi, vô vàn sản phẩm phục vụ năm học mới, đáp ứng nhu cầu của nhiều lứa tuổi đã sẵn sàng tại ADCBook cùng những ưu đãi và quà tặng hấp dẫn!</p>
+								</div>
+							</div>
+							<div class="card-news">
+								<div class="img-card-news"><img src="images/news/n3.webp"></div>
+								<div class="info-card-news">
+									<a href="">HỨNG KHỞI TỚI TRƯỜNG - QUÀ "KOOL" CỰC ĐÃ</a>
+									<p>Mùa Back To School 2023 đã đến rồi, vô vàn sản phẩm phục vụ năm học mới, đáp ứng nhu cầu của nhiều lứa tuổi đã sẵn sàng tại ADCBook cùng những ưu đãi và quà tặng hấp dẫn!</p>
+								</div>
+							</div>
+							<div class="card-news">
+								<div class="img-card-news"><img src="images/news/n4.webp"></div>
+								<div class="info-card-news">
+									<a href="">HỨNG KHỞI TỚI TRƯỜNG - QUÀ "KOOL" CỰC ĐÃ</a>
+									<p>Mùa Back To School 2023 đã đến rồi, vô vàn sản phẩm phục vụ năm học mới, đáp ứng nhu cầu của nhiều lứa tuổi đã sẵn sàng tại ADCBook cùng những ưu đãi và quà tặng hấp dẫn!</p>
+								</div>
+							</div>
+							<div class="card-news">
+								<div class="img-card-news"><img src="images/news/n2.webp"></div>
+								<div class="info-card-news">
+									<a href="">HỨNG KHỞI TỚI TRƯỜNG - QUÀ "KOOL" CỰC ĐÃ</a>
+									<p>Mùa Back To School 2023 đã đến rồi, vô vàn sản phẩm phục vụ năm học mới, đáp ứng nhu cầu của nhiều lứa tuổi đã sẵn sàng tại ADCBook cùng những ưu đãi và quà tặng hấp dẫn!</p>
+								</div>
+							</div>
+							<div class="card-news">
+								<div class="img-card-news"><img src="images/news/n4.webp"></div>
+								<div class="info-card-news">
+									<a href="">HỨNG KHỞI TỚI TRƯỜNG - QUÀ "KOOL" CỰC ĐÃ</a>
+									<p>Mùa Back To School 2023 đã đến rồi, vô vàn sản phẩm phục vụ năm học mới, đáp ứng nhu cầu của nhiều lứa tuổi đã sẵn sàng tại ADCBook cùng những ưu đãi và quà tặng hấp dẫn!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="box-footer">
+			<div class="container">
+				<div class="wrap wrap-footer">
+					<div class="logo-company"><a href=""><img src="images/logo.png"></a></div>
+					<div class="list-footer">
+						<div class="menu-footer">
+							<a href="">VỀ ADCBOOK</a>
+							<a href="">Giới thiệu</a>
+							<a href="">Điều khoản sử dụng</a>
+							<a href="">Tin tức</a>
+							<a href="">Khuyến mãi</a>
+						</div>
+						<div class="support-footer">
+							<span>Support</span>
+							<a href="">Hướng dẫn mua hàng</a>
+							<a href="">Our Partner</a>
+							<a href="">Chính sách và bảo mật</a>
+							<a href="">Chính sách xử lí</a>
+							<a href="">Chính sách vận chuyển</a>
+							<a href="">Chính sách đổi trả</a>
+							<a href="">Hình thức thanh toán</a>
+							<a href="">Câu hỏi thường gặp</a>
+						</div>
+						<div class="contact-footer">
+							<span>Contact</span>
+							<a href=""><i class="fa-solid fa-phone"></i> <span>094-805-8211</span></a>
+							<a href=""><i class="fa-solid fa-envelope"></i> <span>duchung1412@gmail.com</span></a>
+							<a href=""><i class="fa-solid fa-location-dot"></i> <span>68 phố Nhổn, Bắc Từ Liêm, Hà Nội</span></a>
+							<div class="contact-icon">
+								<a href=""><i class="fa-brands fa-facebook-f"></i></a>
+								<a href=""><i class="fa-brands fa-instagram"></i></a>
+								<a href=""><i class="fa-brands fa-tiktok"></i></a>
+								<a href=""><i class="fa-brands fa-youtube"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright-footer">
+				<span>© Copyright 2023 - by Hoang Duc Hung</span>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
+<!-- Add Slick Carousel JS -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- Add AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>

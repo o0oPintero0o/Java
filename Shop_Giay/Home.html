@@ -1,0 +1,122 @@
+<!-- <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%> -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!------ Include the above in your HEAD tag ---------->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="./css/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="./css/styles.css">
+         <!-- Font Awesome -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <jsp:include page="Menu.jsp"></jsp:include>
+            <div class="container" style="margin-top: 40px;">
+                <div class="row">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="Home.jsp">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Category</a></li>
+                                <li class="breadcrumb-item active" aria-current="#">Sub-category</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                <jsp:include page="Left.jsp"></jsp:include>
+
+                    <div class="col-sm-9">
+                        <div id="content" class="row">
+                        <c:forEach items="${listP}" var="o">
+                            <div class="product col-12 col-md-6 col-lg-4">
+                                <div class="card">
+                                    <img class="card-img-top card-img" src="${o.image}" alt="Card image cap">
+                                   <!-- <img class="card-img" src="./images/slide/congso.jpg" alt=""> -->
+
+                                    <div class="card-body card-info">
+                                        <h4 class="card-title show_txt"><a href="detail?pid=${o.id}" title="View Product">${o.name}</a></h4>
+                                        <p class="card-text show_txt">${o.title}</p>
+                                        <div class="row btn-card-book">
+                                            <div class="col-5">
+                                                <button class="btn-buy">
+                                                    <p class="btn btn-block">${o.price} $</p>
+                                                </button>
+                                            </div>
+                                            <div class="col-7">
+                                                <button class="btn-view">
+                                                    <a href="">
+                                                        <span>Add to Card</span>
+                                                        <i class="fa-solid fa-cart-shopping"></i>
+                                                    </a>
+                                                </button>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </c:forEach>
+                    </div>
+                    <div class="break" style="margin-top: 20px;">
+                    
+                    </div>
+                    <button onclick="loadMore()" class="btn btn-load">Load more</button>
+                </div>
+                <div class="break" style="margin-top: 40px;">
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <jsp:include page="Footer.jsp"></jsp:include>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+                        function loadMore() {
+                            var amount = document.getElementsByClassName("product").length;
+                            $.ajax({
+                                url: "/Web_BanHang/LoadMoreControl",
+                                type: "get", //send it through get method
+                                data: {
+                                    exits: amount
+                                },
+                                success: function (data) {
+                                    var row = document.getElementById("content");
+                                    row.innerHTML += data;
+                                },
+                                error: function (xhr) {
+                                    //Do Something to handle error
+                                }
+                            });
+                        }
+                        function searchByName(param){
+                            var txtSearch = param.value;
+                            $.ajax({
+                                url: "/Web_BanHang/searchAjax",
+                                type: "get", //send it through get method
+                                data: {
+                                    txt: txtSearch
+                                },
+                                success: function (data) {
+                                    var row = document.getElementById("content");
+                                    row.innerHTML = data;
+                                },
+                                error: function (xhr) {
+                                    //Do Something to handle error
+                                }
+                            });
+                        }
+        </script>  
+    </body>
+
+</html>
+

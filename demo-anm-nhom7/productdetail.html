@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<!-- Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<!-- Add jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- Add Slick Carousel CSS -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script type="text/javascript" src="js/web.js"></script>
+	<!-- Add AOS Animation -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+	<script type="text/javascript" src="js/book.js"></script>
+	<link rel="icon" href="images/logo.webp" type="image/png">
+	<title>BOOK</title>
+</head>
+
+<body>
+	<div id="wrapwrap" class="homepage">
+		<header class="header">
+			<div class="header-top">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-8">
+							<ul class="contact-info">
+								<li class="contact-info__list">
+									<img src="images/top-icon1.png">100% sản phẩm có bản quyền
+								</li>
+								<li class="contact-info__list">
+									<img src="images/top-icon2.png">Giao hàng toàn quốc
+								</li>
+								<li class="contact-info__list">
+									<img src="images/top-icon3.png">30 ngày miễn phí đổi trả
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-4">
+							<ul class="contact-info contact-info-right">
+								<li class="contact-info__list">
+									<a href=""><p class="contact-info__list">Tin tức</p></a>
+								</li>
+								<li class="contact-info__list">
+									<a href=""><p class="contact-info__list">Hướng dẫn</p></a>
+								</li>
+							</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-middle">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2">
+							<a href="./index.html" class="logo-box"><img src="images/logo.png"></a>
+						</div>
+						<div class="col-lg-5">
+							<form method="" action="">
+								<div class="input-group">
+									<input type="text" name="search" class="form-control search_box_fix" placeholder="Tìm kiếm sản phẩm bạn mong muốn">
+									<div class="input-group-append">
+										<button type="submit" class="search-form__submit" title="search" style="width: 48px;">
+											<div class="search"><i class="search-btn-icon fa-solid fa-magnifying-glass" onclick="return search();"></i></div>
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col-lg-3">
+							<div class="corporate">
+								<div class="corporate-single corporate-1">
+									<div class="corporate-icon">
+										<a href="#"><img src="images/top-icon5.png"></a>
+									</div>
+									<div class="corporate-content">
+										<a href="#"><p class="corporate-text hover-follow-color">Theo dõi<br>đơn hàng</p></a>
+									</div>
+								</div>
+								<div class="corporate-single">
+									<div class="corporate-icon">
+										<a href="#"><img src="images/top-icon7.png"></a>
+									</div>
+									<div class="corporate-content">
+										<div class="dropdown header-top-dropdown">
+											<div class="drop-down-toggle dropdown-login-header">Đăng nhập<br>Đăng ký</div>
+											<div class="row">
+												<div class="popup-drop-down-login">
+													<div class="content-popup-login">
+														<a href="./login.html" style="margin-top: 5px;"><button class="btn-dropdown-login">Đăng nhập</button></a>
+														<a href="./register.html"><button class="btn-dropdown-login">Đăng ký</button></a>
+														<a href=""><button class="btn-dropdown-login btn-login-facebook"><span><i class="fa-brands fa-facebook" style="font-size: 20px;"></i></span>Đăng nhập bằng Facebook</button></a>
+														<a href=""><button class="btn-dropdown-login btn-login-google"><span><i class="fa-brands fa-google" style="font-size: 20px;"></i></i></span>Đăng nhập bằng Google</button></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="mini-cart">
+								<div class="mini-cart_dropdown">
+									<img src="images/top-icon8.png">
+									<span class="cart-icon">Giỏ hàng</span>
+									<sub class="mini-cart_count">0</sub>
+								</div>
+								<div class="mini-cart__dropdown-menu">
+									<div class="mini-cart__content form-mini-cart-header">
+										<div class="mini-cart_item">
+											<div class="mini-cart_item-single">
+												<div class="row">
+													<div class="col-md-3 col-lg-3">
+														<div class="image-cart"><a href=""><img src="images/cart.jfif" class="img-responsive"></a></div>
+													</div>
+													<div class="col-md-7 col-lg-7">
+														<a href="#" class="item-name">Chín tháng yêu thương</a>
+														<div class="cart-quantity">Số lượng: 1</div>
+													</div>
+													<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+														<p class="price-cart">69.000đ</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="mini-cart_total">
+											<h4>
+												<span class="mini-cart_total-title">Thành tiền</span>
+												<span class="cart-total-value"><strong>69.000đ</strong></span>
+											</h4>
+										</div>
+										<div class="mini-cart_btn">
+											<a class="cart-view">
+												Xem giỏ hàng
+												<i class="fa-solid fa-angle-right"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom" style="height: 50px;">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2 col-md-2" style="padding-right: 0!important;">
+							<div class="category-nav" style="height: 50px;">
+								<div class="category-nav_title">
+									<img src="images/top-icon9.png">
+									<span class="product-title">Danh mục sản phẩm</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-10 col-md-10">
+							<div class="custom-element">
+								<div class="history-view">
+									<i class="fa-history-view fa-solid fa-clock-rotate-left"></i>
+									<a href="" class="history-view_product">
+										Sản phẩm đã xem <i class="fa-solid fa-angle-down"></i>
+									</a>
+								</div>
+								<div class="hotdeal">
+									<i class="fa-hotdeal fa-solid fa-fire"></i>
+									<a href="" class="hotdeal_product">Hotdeal</a>
+								</div>
+								<div class="flash-sale">
+									<i class="fa-flash-sale fa-solid fa-bolt"></i>
+									<a href="" class="flash-sale_product">Flash Sale</a>
+								</div>
+								<div class="location">
+									<i class="fa-location fa-solid fa-location-dot"></i>
+									<a href="" class="location_shop">Hệ thống cửa hàng</a>
+								</div>
+								<div class="contact">
+									<i class="fa-contact fa-solid fa-phone"></i>
+									<a href="" class="contact_phone">0931068789</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="main-content-wrapper">
+			<div class="container">
+				<div class="back-page">
+					<a href="index.html">Trang chủ</a>
+					<a href="products.html">Văn học</a>
+					<a href="productdetail.html">Hai Vạn Dặm Dưới Đáy Biển</a>
+				</div>
+			</div>
+			<div class="box-product-detail">
+				<div class="container">
+					<div class="wrap-product-detail">
+						<div class="card-product-detail">
+							<div class="img-product-detail">
+								<img src="images/product-detail/prd1.webp">
+							</div>
+							<div class="content-product-detail">
+								<h1 class="title-product-detail">Hai Vạn Dặm Dưới Đáy Biển</h1>
+								<div class="info-brand-detail">
+									<div class="stock-brand-title">
+										<span>Nhà phát hành: </span>
+										<span><a href="">Tân Việt</a></span>
+									</div>
+									<div class="stock-brand-title">
+										<span>Nhà xuất bản: </span>
+										<span><a href="">Nhà xuất bản Dân Trí</a></span>
+									</div>
+									<div class="stock-brand-title">
+										<span>Tác giả/Dịch giả: </span>
+										<span><a href="">Junes Verne</a></span>
+									</div>
+									<div class="stock-brand-title">
+										<span>Hình thức bìa: </span>
+										<span><a href="">Bìa mềm</a></span>
+									</div>
+								</div>
+								<div class="price-product-detail">
+									<span class="price-old">145,000đ</span>
+									<span class="price-new">115,000đ</span>
+									<span class="sale-off"> - 20% </span>
+								</div>
+								<div class="product-detail-description">
+									<p>Jules Verne là một thiên tài đi trước thời đại, cha đẻ của thể loại khoa học viễn tưởng. Trong tác phẩm Hai vạn dặm dưới biển, ông đưa người đọc đi xuống độ sâu chưa ai chạm tới của đại dương mênh mông, trong một chuyến đi đầy ngoạn mục và phấn khích cũng như không thiếu sự nguy hiểm. Khi đọc tác phẩm này, độc giả sẽ bị cuốn vào câu chuyện bởi hình ảnh đầy bí ẩn về chiếc tàu ngầm tuyệt vời, dường như nó là hình ảnh ẩn dụ cho việc biến mọi ước mơ thành hiện thực. Khi đọc tác phẩm, chắc hẳn cũng có không ít độc giả muốn được hòa mình vào những con sóng của biển khơi, được đồng hành cùng Giáo sư Aronnax trong hành trình đáng kinh ngạc đó. Ngoài ra, hình ảnh con tàu không chỉ mang tính tiên tri cho thời đại của nó, nó còn chứng tỏ rằng các hình ảnh độc đáo và sống động trong văn học có khả năng sống mãi với thời gian. </p>
+								</div>
+								<div class="form-action-detail">
+									<div class="product-quantity">
+										<label for="qty">Số lượng </label>
+										<div class="input-quantity-product">
+											<input onkeyup="valid(this,'numbers')" min="1" type="text" title="Số lượng" value="1" id="qtym" name="quantity" class="input-text">
+											<div class="btn-count">
+												<button class="btn-minus" onclick="var result = document.getElementById('qtym'); var qtypro =result.value; if( !isNaN(qtypro) && qtypro > 1) result.value--; return false;" type="button">
+													<i class="fa-solid fa-minus"></i>
+												</button>
+												<button class="btn-plus" onclick="var result = document.getElementById('qtym'); var qtypro =result.value; if( !isNaN(qtypro)) result.value++; return false;" type="button">
+													<i class="fa-solid fa-plus"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="btn-product-detail">
+									<button type="submit" class="add-to-cart">Thêm vào giỏ hàng</button>
+									<button type="submit" class="btn-buynow">Mua ngay</button>
+								</div>
+							</div>
+						</div>
+						<div class="share-product">
+							<span class="share-node"><i class="fa-solid fa-share-nodes"></i></span>
+							<a href=""><i class="fa-brands fa-facebook-f"></i></a>
+							<a href=""><i class="fa-brands fa-instagram"></i></a>
+							<a href=""><i class="fa-brands fa-tiktok"></i></a>
+							<a href=""><i class="fa-brands fa-youtube"></i></a>
+						</div>
+					</div>
+					<div class="info-product-detail">
+						<div class="info-product-title">Thông tin sản phẩm</div>
+						<div class="info-product-table">
+							<table class="table_tag">
+								<tbody>
+									<tr>
+										<th scope="row">Nhà phát hành</th>
+										<td><a href="">Tân Việt</a></td>
+									</tr>
+									<tr>
+										<th scope="row">Tác giả/Dịch giả</th>
+										<td><a href="">Jules Verne</a></td>
+									</tr>
+									<tr>
+										<th scope="row">Nhà xuất bản</th>
+										<td><a href="">Nhà xuất bản Dân Trí</a></td>
+									</tr>
+									<tr>
+										<th scope="row">Hình thức bìa</th>
+										<td>Bìa mềm</td>
+									</tr>
+									<tr>
+										<th scope="row">Số trang</th>
+										<td>445</td>
+									</tr>
+									<tr>
+										<th scope="row">Kích thước</th>
+										<td>20.5 x 14.5 cm</td>
+									</tr>
+									<tr>
+										<th scope="row">Nhà cung cấp</th>
+										<td><a href="">Công ty TNHH Đầu tư và Phát triển Tân Việt</a></td>
+									</tr>
+									<tr>
+										<th scope="row">Trọng lượng</th>
+										<td>480g</td>
+									</tr>
+									<tr>
+										<th scope="row">Mã sản phẩm</th>
+										<td>8935210302274</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="info-product-content-detail">
+							<h3 class="info-product-content-detail-title">Hai Vạn Dặm Dưới Đáy Biển</h3>
+							<p>
+								Jules Verne là một thiên tài đi trước thời đại, cha đẻ của thể loại khoa học viễn tưởng. Trong tác phẩm Hai vạn dặm dưới biển, ông đưa người đọc đi xuống độ sâu chưa ai chạm tới của đại dương mênh mông, trong một chuyến đi đầy ngoạn mục và phấn khích cũng như không thiếu sự nguy hiểm. Khi đọc tác phẩm này, độc giả sẽ bị cuốn vào câu chuyện bởi hình ảnh đầy bí ẩn về chiếc tàu ngầm tuyệt vời, dường như nó là hình ảnh ẩn dụ cho việc biến mọi ước mơ thành hiện thực. Khi đọc tác phẩm, chắc hẳn cũng có không ít độc giả muốn được hòa mình vào những con sóng của biển khơi, được đồng hành cùng Giáo sư Aronnax trong hành trình đáng kinh ngạc đó. Ngoài ra, hình ảnh con tàu không chỉ mang tính tiên tri cho thời đại của nó, nó còn chứng tỏ rằng các hình ảnh độc đáo và sống động trong văn học có khả năng sống mãi với thời gian. Giáo sư Aronnax, một nhà tự nhiên học và chuyên gia về sinh vật biển nổi tiếng người Pháp, đang trên đường trở về quê hương sau một chuyến thám hiểm dài, thì biết được thông tin về một sinh vật biển đầy bí ẩn đang tấn công các con tàu trên đại dương. Ông nhanh chóng quyết định tham gia vào chuyến tìm kiếm và tiêu diệt con quái vật. Sau đó, chính sinh vật khổng lồ huyền bí đã tấn công con thuyền mà ông đang đi, ông trôi lênh đênh trên biển cùng với người hầu của mình và một thợ săn cá voi người Canada. Hóa ra con “quái vật” đó lại là một chiếc tàu ngầm khổng lồ! Được chỉ huy bởi vị thuyền trưởng Nemo thông minh nhưng có ý chống đối xã hội một cách gay gắt – Nautilus – chiếc tàu ngầm đầu tiên trên thế giới, đã đi khắp các đại dương, đưa Aronnax và những người bạn của ông đi vòng quanh thế giới bằng lối đi dưới đáy biển. Nhưng Nemo đang che giấu những bí mật của riêng mình... và Nemo cũng không hề có ý định để Aronnax cùng những người bạn của ông trở lại đất liền. Qua tác phẩm này có thể thấy, Verne có một trí tưởng tượng vô cùng sống động khi mô tả một chiếc tàu ngầm trước cả khi con người đưa ra khái niệm về tàu ngầm. Những mô tả chi tiết về cách thức hoạt động của con tàu và cách nó có thể sản xuất điện, năng lượng từ không gì khác ngoài nước biển có lẽ là khoa học viễn tưởng đạt đến đỉnh cao. Khiến chúng ta tin rằng khi chế tạo những chiếc tàu ngầm đầu tiên, hẳn là các nhà phát minh đã phải nghiên cứu nghiêm túc về con tàu Nautilus của Verne. Cuối cùng, độ chính xác của hệ động thực vật dưới biển cùng mô tả chi tiết về thiết kế và hoạt động của Nautilus khiến người ta phải tự hỏi: Liệu thuyền trưởng Nemo và giáo sư Aronnax là nhân vật tưởng tượng hay họ đã thực sự tồn tại? Có thể thấy Hai vạn dặm dưới biển không chỉ là hành trình của trí tưởng tượng mà còn là sự khám phá và khát khao tự do chứa đầy những yếu tố bất ngờ, kịch tính, kích thích mạnh mẽ trí tưởng tượng bằng lối miêu tả chi tiết và sống động. Các yếu tố khoa học và giả tưởng đan xen hài hòa, khiến chúng ta chẳng thể dứt ra được cho đến khi đọc đến trang cuối cùng.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box-similar-products">
+				<div class="container">
+					<div class="wrap-similar-products">
+						<div class="title-similar-products">
+							<h3>Sản phẩm cùng loại</h3>
+							<a class="btn-similar-products" href="">Xem tất cả <i class="fa-solid fa-angle-right"></i></a>
+						</div>
+						<div class="slide-product-home">
+							<div class="content-product-home">
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/book/book1.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Những Người Vợ Tốt</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/book/book2.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Những Người Phụ Nữ Bé Nhỏ </a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/book/book3.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Nanh Trắng</a></h3>
+										<span class="soldout"> Hết hàng </span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/book/book4.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Khu Vườn Bí Mật</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/book/book5.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Hai Vạn Dặm Dưới Biển</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/book/book6.webp"></div>
+									<div class="info-card">
+										<h3><a href="">150 Thuật Ngữ Văn Học</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/book/book7.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Tiêu Sơn Tráng Sĩ</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-product-home">
+									<div class="img-card"><img src="images/book/book8.webp"></div>
+									<div class="info-card">
+										<h3><a href="">Nanh Trắng</a></h3>
+										<span class="smart-discount"> <i> - 20% </i></span>
+										<div class="price-book">
+											<span class="price-new">115,000đ</span>
+											<span class="price-old">145,000đ</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="box-footer">
+			<div class="container">
+				<div class="wrap wrap-footer">
+					<div class="logo-company"><a href=""><img src="images/logo.png"></a></div>
+					<div class="list-footer">
+						<div class="menu-footer">
+							<a href="">VỀ ADCBOOK</a>
+							<a href="">Giới thiệu</a>
+							<a href="">Điều khoản sử dụng</a>
+							<a href="">Tin tức</a>
+							<a href="">Khuyến mãi</a>
+						</div>
+						<div class="support-footer">
+							<span>Support</span>
+							<a href="">Hướng dẫn mua hàng</a>
+							<a href="">Our Partner</a>
+							<a href="">Chính sách và bảo mật</a>
+							<a href="">Chính sách xử lí</a>
+							<a href="">Chính sách vận chuyển</a>
+							<a href="">Chính sách đổi trả</a>
+							<a href="">Hình thức thanh toán</a>
+							<a href="">Câu hỏi thường gặp</a>
+						</div>
+						<div class="contact-footer">
+							<span>Contact</span>
+							<a href=""><i class="fa-solid fa-phone"></i> <span>094-805-8211</span></a>
+							<a href=""><i class="fa-solid fa-envelope"></i> <span>duchung1412@gmail.com</span></a>
+							<a href=""><i class="fa-solid fa-location-dot"></i> <span>68 phố Nhổn, Bắc Từ Liêm, Hà Nội</span></a>
+							<div class="contact-icon">
+								<a href=""><i class="fa-brands fa-facebook-f"></i></a>
+								<a href=""><i class="fa-brands fa-instagram"></i></a>
+								<a href=""><i class="fa-brands fa-tiktok"></i></a>
+								<a href=""><i class="fa-brands fa-youtube"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright-footer">
+				<span>© Copyright 2023 - by Hoang Duc Hung</span>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
+<!-- Add Slick Carousel JS -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- Add AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
