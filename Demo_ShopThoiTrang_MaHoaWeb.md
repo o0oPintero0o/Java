@@ -7,6 +7,7 @@ Giao diện thời trang sau khi khởi chạy. ShopThoiTrang
 
 Cấp chứng chỉ. Triển khai HTTPS
 1.	Triển khai web https trên Windows
+   
 Bước 1: Cài đặt chứng chỉ Self Signed Certificate cho trang web
 •	Mở Window search cụm từ ‘Window PowerShell’ với quyền Admintrator
 •	Giao diện sau khi hiện lên
@@ -25,9 +26,12 @@ Bước 1: Cài đặt chứng chỉ Self Signed Certificate cho trang web
 
 •	Thu được chứng chỉ (Certificate) tự ký là một loại chứng chỉ mà bạn tạo và ký tại chính máy chủ của mình thay vì thông qua một bên cấp chứng chỉ thứ ba.
 Bước 2: Chuẩn bị giao diện HTML/CSS 
+
 Chuẩn bị file Project-HTML/CSS nên được đặt ngoài ThisPC không nên đặt trong User tránh việc phân quyền, máy tính không thể truy cập được
 •	Trình duyệt Browse sẽ tự động truy cập đến file index.html làm giao diện chính
+
 Bước 3: Cài đặt trang web trên Internet Information Services Manager
+
 Mở Window search “Internet Information Service (IIS) Manager”
 •	Trong trường hợp máy tính của bạn search không hiển thị Internet Information Service (IIS). Bạn cần truy cập Control Panel 
 •	Chọn Program hoặc Uninstall a program
